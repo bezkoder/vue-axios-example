@@ -99,7 +99,7 @@ export default {
     }
   },
   methods: {
-    fortmatResponse(res) {
+    formatResponse(res) {
       return JSON.stringify(res, null, 2);
     },
 
@@ -113,9 +113,9 @@ export default {
           data: res.data,
         };
 
-        this.getResult = this.fortmatResponse(result);
+        this.getResult = this.formatResponse(result);
       } catch (err) {
-        this.getResult = this.fortmatResponse(err.response?.data) || err;
+        this.getResult = this.formatResponse(err.response?.data) || err;
       }
     },
 
@@ -140,9 +140,9 @@ export default {
           //   config: res.config,
           // };
 
-          this.getResult = this.fortmatResponse(result);
+          this.getResult = this.formatResponse(result);
         } catch (err) {
-          this.getResult = this.fortmatResponse(err.response?.data) || err;
+          this.getResult = this.formatResponse(err.response?.data) || err;
         }
       }
     },
@@ -165,9 +165,9 @@ export default {
             data: res.data,
           };
 
-          this.getResult = this.fortmatResponse(result);
+          this.getResult = this.formatResponse(result);
         } catch (err) {
-          this.getResult = this.fortmatResponse(err.response?.data) || err;
+          this.getResult = this.formatResponse(err.response?.data) || err;
         }
       }
     },
@@ -191,9 +191,9 @@ export default {
           data: res.data,
         };
 
-        this.postResult = this.fortmatResponse(result);
+        this.postResult = this.formatResponse(result);
       } catch (err) {
-        this.postResult = this.fortmatResponse(err.response?.data) || err;
+        this.postResult = this.formatResponse(err.response?.data) || err;
       }
     },
 
@@ -221,9 +221,9 @@ export default {
             data: res.data,
           };
 
-          this.putResult = this.fortmatResponse(result);
+          this.putResult = this.formatResponse(result);
         } catch (err) {
-          this.putResult = this.fortmatResponse(err.response?.data) || err;
+          this.putResult = this.formatResponse(err.response?.data) || err;
         }
       }
     },
@@ -238,9 +238,9 @@ export default {
           data: res.data,
         };
 
-        this.deleteResult = this.fortmatResponse(result);
+        this.deleteResult = this.formatResponse(result);
       } catch (err) {
-        this.deleteResult = this.fortmatResponse(err.response?.data) || err;
+        this.deleteResult = this.formatResponse(err.response?.data) || err;
       }
     },
 
@@ -257,9 +257,9 @@ export default {
             data: res.data,
           };
 
-          this.deleteResult = this.fortmatResponse(result);
+          this.deleteResult = this.formatResponse(result);
         } catch (err) {
-          this.deleteResult = this.fortmatResponse(err.response?.data) || err;
+          this.deleteResult = this.formatResponse(err.response?.data) || err;
         }
       }
     },
